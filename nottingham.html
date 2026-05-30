@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="it">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface": "#f4f7fc",
+                "primary": "#00247d", /* Blu Reale Union Jack */
+                "outline-variant": "#cbd5e1",
+                "on-tertiary-fixed-variant": "#334155",
+                "secondary-fixed": "#e2e8f0",
+                "on-primary-container": "#f0f4ff",
+                "outline": "#64748b",
+                "on-secondary": "#ffffff",
+                "on-primary-fixed-variant": "#00103a",
+                "surface-container-lowest": "#ffffff",
+                "on-background": "#0f172a",
+                "secondary-container": "#e2e8f0",
+                "on-secondary-container": "#0f172a",
+                "on-surface-variant": "#475569",
+                "tertiary": "#cf142b", /* Rosso Union Jack */
+                "on-inverse-surface": "#f8fafc",
+                "on-surface": "#0f172a",
+                "surface-container-low": "#f1f5f9",
+                "inverse-surface": "#1e293b",
+                "on-primary": "#ffffff",
+                "primary-fixed-dim": "#94a3b8",
+                "on-tertiary-container": "#ffffff",
+                "primary-container": "#e0f2fe",
+                "surface-bright": "#f8fafc",
+                "surface-container-high": "#e2e8f0",
+                "inverse-primary": "#cbd5e1",
+                "on-tertiary": "#ffffff",
+                "primary-fixed": "#c7d2fe",
+                "secondary": "#475569",
+                "surface-container-highest": "#e2e8f0",
+                "background": "#f8fafc",
+                "tertiary-container": "#cf142b",
+                "secondary-fixed-dim": "#be2a3c",
+                "error": "#ba1a1a",
+                "error-container": "#ffdad6",
+                "on-error": "#ffffff",
+                "on-error-container": "#410002"
+            }
+          }
+        }
+      }
+    </script>
+    <title>Soggiorno Nottingham - White Rose</title>
+</head>
+<body class="bg-background text-on-surface antialiased font-['Inter'] min-h-screen flex flex-col">
+
+    <header class="border-b border-outline-variant bg-surface-container-lowest sticky top-0 z-50">
+        <div class="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 font-['Lexend'] font-bold text-lg text-primary hover:opacity-80 transition-opacity">
+                <span class="material-symbols-outlined text-primary">arrow_back</span>
+                <span>FILIPPO DOTTI</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="index.html" class="text-secondary hover:text-primary transition-colors">Home Mappa</a>
+                <a href="bergamoscienza.html" class="text-secondary hover:text-primary transition-colors">Bergamo Scienza</a>
+                <a href="sostenibilita.html" class="text-secondary hover:text-primary transition-colors">Sostenibilità</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-[1000px] mx-auto w-full px-6 py-10">
+        
+        <section class="mb-8">
+            <div class="flex items-center gap-2 text-[#cf142b] font-['Lexend'] font-semibold text-sm tracking-wider uppercase mb-2">
+                <span class="material-symbols-outlined text-sm text-[#cf142b]">location_on</span> Nottingham, Regno Unito
+            </div>
+            <h1 class="text-3xl md:text-5xl font-['Lexend'] font-black tracking-tight text-primary mb-4">
+                PCTO Internazionale: White Rose
+            </h1>
+            <p class="text-secondary text-lg max-w-3xl">
+                Esperienza lavorativa nel retail retail finalizzata al consolidamento linguistico e alla gestione pratica del punto vendita.
+            </p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12 items-center">
+            <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-surface-container-low p-4 rounded-2xl border border-slate-200 flex items-start gap-3">
+                    <span class="material-symbols-outlined text-primary mt-0.5">calendar_month</span>
+                    <div>
+                        <span class="block text-xs text-secondary font-medium uppercase tracking-wider">Periodo</span>
+                        <span class="font-bold text-primary text-sm">30 Ago — 10 Set 2024</span>
+                    </div>
+                </div>
+                <div class="bg-surface-container-low p-4 rounded-2xl border border-slate-200 flex items-start gap-3">
+                    <span class="material-symbols-outlined text-[#cf142b] mt-0.5">storefront</span>
+                    <div>
+                        <span class="block text-xs text-secondary font-medium uppercase tracking-wider">Azienda</span>
+                        <span class="font-bold text-primary text-sm">White Rose Store</span>
+                    </div>
+                </div>
+                
+                <div class="bg-surface-container-low p-4 rounded-2xl border border-slate-200 flex flex-col gap-3 sm:col-span-2">
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary mt-0.5">badge</span>
+                        <div>
+                            <span class="block text-xs text-secondary font-medium uppercase tracking-wider">Ruolo</span>
+                            <span class="font-bold text-primary text-sm">Shop Assistant</span>
+                        </div>
+                    </div>
+                    <div class="relative rounded-xl overflow-hidden border border-slate-200 h-32 bg-slate-50">
+                        <img src="internowr.webp" alt="Interno del negozio White Rose" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=600&q=80'"/>
+                    </div>
+                </div>
+
+                <div class="bg-surface-container-low p-4 rounded-2xl border border-slate-200 flex items-start gap-3 sm:col-span-2">
+                    <span class="material-symbols-outlined text-[#cf142b] mt-0.5">translate</span>
+                    <div>
+                        <span class="block text-xs text-secondary font-medium uppercase tracking-wider">Lingua</span>
+                        <span class="font-bold text-primary text-sm">Inglese Professionale</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-5">
+                <div class="relative rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-slate-100 group">
+                    <img src="whiterose.jpg" alt="White Rose Nottingham Store" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80'"/>
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                        <span class="text-white text-xs font-medium flex items-center gap-1">
+                            <span class="material-symbols-outlined text-xs">photo_camera</span> Store Nottingham
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-['Lexend'] font-bold text-primary mb-6 flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">styler</span> Attività Svolte
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-surface-container-lowest p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-indigo-50 text-primary rounded-xl flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">checkroom</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-primary">Allestimento &amp; Visual</h3>
+                        <p class="text-sm text-secondary leading-relaxed">
+                            Organizzazione espositiva dei capi, assortimento taglie e cura del layout del negozio secondo gli standard del brand.
+                        </p>
+                    </div>
+                    <span class="text-[11px] text-primary/70 font-semibold uppercase tracking-wider mt-4 block">Store Floor</span>
+                </div>
+
+                <div class="bg-surface-container-lowest p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-red-50 text-[#cf142b] rounded-xl flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">support_agent</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-primary">Customer Care</h3>
+                        <p class="text-sm text-secondary leading-relaxed">
+                            Assistenza diretta alla clientela locale e internazionale, gestione richieste e consulenza d'acquisto in lingua inglese.
+                        </p>
+                    </div>
+                    <span class="text-[11px] text-[#cf142b]/70 font-semibold uppercase tracking-wider mt-4 block">Front End</span>
+                </div>
+
+                <div class="bg-surface-container-lowest p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-indigo-50 text-primary rounded-xl flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">box</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-primary">Logistica</h3>
+                        <p class="text-sm text-secondary leading-relaxed">
+                            Ricezione merci, codifica dei nuovi articoli, inventario dello stock e rifornimento continuo dei reparti espositivi.
+                        </p>
+                    </div>
+                    <span class="text-[11px] text-primary/70 font-semibold uppercase tracking-wider mt-4 block">Back Office</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-surface-container-low rounded-3xl p-6 border border-slate-200">
+            <h2 class="text-2xl font-['Lexend'] font-bold text-primary mb-6 flex items-center gap-2">
+                <span class="material-symbols-outlined">schema</span> Competenze Acquisite
+            </h2>
+            
+            <div class="overflow-x-auto rounded-xl border border-slate-300 bg-surface-container-lowest shadow-md">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-[#00247d] text-white font-['Lexend'] text-sm">
+                            <th class="p-4 font-semibold w-1/3 tracking-wide">Area</th>
+                            <th class="p-4 font-semibold w-2/3 tracking-wide">Applicazione Pratica</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm text-secondary divide-y divide-slate-200">
+                        <tr class="hover:bg-[#00247d]/5 transition-colors">
+                            <td class="p-4 font-bold text-[#00247d] flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base text-[#00247d]">record_voice_over</span>
+                                <span>Fluency Inglese</span>
+                            </td>
+                            <td class="p-4 leading-relaxed">
+                                Comunicazione commerciale e interazione fluida con il pubblico senza barriere linguistiche.
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-[#cf142b]/5 transition-colors">
+                            <td class="p-4 font-bold text-[#cf142b] flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base text-[#cf142b]">groups</span>
+                                <span>Team Working</span>
+                            </td>
+                            <td class="p-4 leading-relaxed">
+                                Collaborazione e coordinamento efficace all'interno di un team aziendale internazionale.
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-[#00247d]/5 transition-colors">
+                            <td class="p-4 font-bold text-[#00247d] flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base text-[#00247d]">shopping_bag</span>
+                                <span>Retail Management</span>
+                            </td>
+                            <td class="p-4 leading-relaxed">
+                                Comprensione delle logiche di visual merchandising, flussi operativi e gestione dello stock.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <div class="bg-gradient-to-r from-indigo-50 to-red-50 p-6 rounded-3xl border border-slate-200 shadow-sm">
+                <h2 class="text-2xl font-['Lexend'] font-bold text-primary mb-2 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary">history_edu</span> Diario Riflessivo
+                </h2>
+                <p class="text-sm text-secondary mb-6 leading-relaxed">
+                    L’esperienza presso lo store <strong>White Rose</strong> a Nottingham ha rappresentato un'importante occasione di crescita professionale e personale in linea con gli obiettivi del PCTO.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-5 rounded-2xl border-l-4 border-[#00247d] shadow-sm relative overflow-hidden">
+                        <div class="absolute -right-4 -bottom-4 text-slate-100 pointer-events-none">
+                            <span class="material-symbols-outlined text-7xl">translate</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-[#00247d] font-['Lexend'] font-bold mb-3">
+                            <span class="material-symbols-outlined text-base">forum</span>
+                            <h3>Lingua e Comunicazione</h3>
+                        </div>
+                        <p class="text-sm text-secondary leading-relaxed relative z-10">
+                            Il contatto quotidiano con il pubblico ha superato le insicurezze espositive, ampliando il vocabolario tecnico commerciale in contesti di vendita reali.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-2xl border-l-4 border-[#cf142b] shadow-sm relative overflow-hidden">
+                        <div class="absolute -right-4 -bottom-4 text-slate-100 pointer-events-none">
+                            <span class="material-symbols-outlined text-7xl">corporate_fare</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-[#cf142b] font-['Lexend'] font-bold mb-3">
+                            <span class="material-symbols-outlined text-base">groups_3</span>
+                            <h3>Teamwork e Logistica</h3>
+                        </div>
+                        <p class="text-sm text-secondary leading-relaxed relative z-10">
+                            L'integrazione nel team locale ha consolidato le capacità di problem solving e la comprensione organizzativa tipica di una struttura aziendale complessa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="w-full bg-surface-container-low border-t border-slate-200 mt-auto">
+        <div class="max-w-[1200px] mx-auto py-8 px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-secondary">
+            <div class="font-['Lexend'] font-semibold text-primary">© 2026 Portfolio PCTO — Filippo Dotti</div>
+            <div class="flex gap-6">
+                <a class="hover:text-primary transition-colors underline" href="#">LinkedIn</a>
+                <a class="hover:text-primary transition-colors underline" href="#">GitHub</a>
+                <a class="hover:text-primary transition-colors underline" href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

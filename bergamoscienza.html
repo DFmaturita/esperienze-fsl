@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="it">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface": "#f0f7ff", /* Azzurro chiarissimo di fondo */
+                "primary": "#0284c7", /* Azzurro cielo/pioggia */
+                "outline-variant": "#bae6fd", /* Bordi azzurrati morbidi */
+                "on-tertiary-fixed-variant": "#334155",
+                "secondary-fixed": "#e0f2fe",
+                "on-primary-container": "#f0f9ff",
+                "outline": "#0284c7",
+                "on-secondary": "#ffffff",
+                "on-primary-fixed-variant": "#0c4a6e",
+                "surface-container-lowest": "#ffffff",
+                "on-background": "#0f172a",
+                "secondary-container": "#e0f2fe",
+                "on-secondary-container": "#0369a1",
+                "on-surface-variant": "#334155",
+                "tertiary": "#0369a1", /* Blu profondo */
+                "on-inverse-surface": "#f8fafc",
+                "on-surface": "#0f172a",
+                "surface-container-low": "#e0f2fe",
+                "inverse-surface": "#0f172a",
+                "on-primary": "#ffffff",
+                "primary-fixed-dim": "#38bdf8",
+                "on-tertiary-container": "#0c4a6e",
+                "primary-container": "#e0f2fe",
+                "surface-bright": "#f8fafc",
+                "surface-container-high": "#bae6fd",
+                "inverse-primary": "#bae6fd",
+                "on-tertiary": "#ffffff",
+                "primary-fixed": "#bae6fd",
+                "secondary": "#0284c7",
+                "surface-container-highest": "#7dd3fc",
+                "background": "#fafafa",
+                "tertiary-container": "#e0f2fe",
+                "secondary-fixed-dim": "#be2a3c",
+                "error": "#ba1a1a",
+                "error-container": "#ffdad6",
+                "on-error": "#ffffff",
+                "on-error-container": "#410002"
+            }
+          }
+        }
+      }
+    </script>
+    <title>BergamoScienza — Progetto Meteorologia</title>
+</head>
+<body class="bg-background text-on-surface antialiased font-['Inter'] min-h-screen flex flex-col pb-16 md:pb-0">
+
+    <header class="border-b border-sky-100 bg-surface-container-lowest sticky top-0 z-50">
+        <div class="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 font-['Lexend'] font-bold text-lg text-primary hover:opacity-80 transition-opacity">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span>FILIPPO DOTTI</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="index.html" class="text-on-surface-variant hover:text-primary transition-colors">Home Mappa</a>
+                <a href="bergamoscienza.html" class="text-primary font-semibold transition-colors">Bergamo Scienza</a>
+                <a href="sostenibilita.html" class="text-on-surface-variant hover:text-primary transition-colors">Sostenibilità</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-[1000px] mx-auto w-full px-6 py-10">
+        
+        <section class="mb-8 text-center md:text-left">
+            <div class="inline-flex items-center gap-2 text-primary font-['Lexend'] font-semibold text-sm tracking-wider uppercase mb-3 bg-sky-50 px-3 py-1 rounded-full border border-sky-100">
+                <span class="material-symbols-outlined text-base">cloudy_snowing</span> BergamoScienza — XXII Edizione
+            </div>
+            <h1 class="text-3xl md:text-5xl font-['Lexend'] font-black tracking-tight text-sky-900 mb-4">
+                Che tempo farà? La Meteorologia
+            </h1>
+            <p class="text-on-surface-variant text-lg max-w-3xl leading-relaxed">
+                Un percorso interattivo di divulgazione scientifica progettato per spiegare la fisica dell'atmosfera, dei fenomeni meteorologici estremi e il funzionamento dei moderni strumenti di misurazione climatica.
+            </p>
+        </section>
+
+        <section class="mb-10">
+            <div class="relative rounded-2xl overflow-hidden shadow-md border border-sky-100 bg-slate-50">
+                <img src="nuvole.jpg" alt="Meteorologia e Fisica dell'Atmosfera" class="w-full h-64 md:h-80 object-cover" onerror="this.src='https://images.unsplash.com/photo-1534088568595-a066f410bcda?auto=format&fit=crop&w=1000&q=80'"/>
+                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900/70 to-transparent p-4 text-white">
+                    <p class="text-xs md:text-sm font-medium flex items-center gap-2">
+                        <span class="material-symbols-outlined text-base text-sky-400">filter_drama</span> Studio e monitoraggio dei sistemi nuvolosi e dinamiche atmosferiche
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-gradient-to-br from-white to-sky-50/50 p-5 rounded-2xl border border-sky-100 shadow-sm flex items-start gap-4">
+                <div class="p-3 bg-sky-100 text-primary rounded-xl">
+                    <span class="material-symbols-outlined">diversity_3</span>
+                </div>
+                <div>
+                    <span class="block text-xs text-on-surface-variant font-medium uppercase tracking-wider mb-0.5">Target Utenza</span>
+                    <span class="font-bold text-sky-900 text-base">Scuole Primarie e Secondarie</span>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-br from-white to-sky-50/50 p-5 rounded-2xl border border-sky-100 shadow-sm flex items-start gap-4">
+                <div class="p-3 bg-sky-100 text-primary rounded-xl">
+                    <span class="material-symbols-outlined">travel_explore</span>
+                </div>
+                <div>
+                    <span class="block text-xs text-on-surface-variant font-medium uppercase tracking-wider mb-0.5">Ruolo Svolto</span>
+                    <span class="font-bold text-sky-900 text-base">Divulgatore Scientifico (Guida)</span>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-white to-sky-50/50 p-5 rounded-2xl border border-sky-100 shadow-sm flex items-start gap-4">
+                <div class="p-3 bg-sky-100 text-primary rounded-xl">
+                    <span class="material-symbols-outlined">device_thermostat</span>
+                </div>
+                <div>
+                    <span class="block text-xs text-on-surface-variant font-medium uppercase tracking-wider mb-0.5">Focus Tematico</span>
+                    <span class="font-bold text-sky-900 text-base">Fisica dell'Atmosfera &amp; Clima</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+            <div class="md:col-span-7 space-y-6">
+                
+                <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm">
+                    <h2 class="text-xl font-['Lexend'] font-bold text-sky-900 mb-3 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">lab_research</span> Laboratorio Didattico Interno
+                    </h2>
+                    <p class="text-sm text-on-surface-variant leading-relaxed">
+                        Durante la prima settimana, l'attività si è concentrata all'interno dei laboratori scolastici. Abbiamo accolto classi di studenti delle scuole elementari e medie guidandoli attraverso esperimenti pratici mirati, come la simulazione della pressione atmosferica e la riproduzione di una nuvola in bottiglia, traducendo leggi fisiche complesse in concetti accessibili e affascinanti.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm space-y-4">
+                    <div>
+                        <h2 class="text-xl font-['Lexend'] font-bold text-sky-900 mb-3 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary">holiday_village</span> Scuole in Piazza
+                        </h2>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Nel fine settimana conclusivo, il progetto si è trasferito all'aperto nella cornice di "Scuole in Piazza". In questa fase di massima apertura al pubblico e alla cittadinanza, abbiamo allestito stand interattivi esponendo e spiegando il funzionamento pratico di una vera stazione meteorologica professionale dotata di anemometro, barometro e pluviometro.
+                        </p>
+                    </div>
+                    
+                    <div class="relative rounded-xl overflow-hidden border border-sky-100 shadow-sm bg-slate-50">
+                        <img src="bergamoscienza.jpg" alt="Filippo Dotti a Scuole in Piazza BergamoScienza" class="w-full h-auto max-h-[350px] object-cover" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80'"/>
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900/80 to-transparent p-3 text-white">
+                            <p class="text-xs font-medium flex items-center gap-1.5">
+                                <span class="material-symbols-outlined text-sm">photo_camera</span> Stand espositivo e dimostrazioni pratiche sul campo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="md:col-span-5 space-y-6">
+                <div class="bg-gradient-to-b from-sky-900 to-sky-950 text-white rounded-3xl p-6 shadow-md relative overflow-hidden">
+                    <div class="absolute right-0 top-0 opacity-10 translate-x-6 -translate-y-6 pointer-events-none">
+                        <span class="material-symbols-outlined text-[180px]">workspace_premium</span>
+                    </div>
+                    
+                    <h2 class="text-xl font-['Lexend'] font-bold mb-4 flex items-center gap-2 border-b border-sky-800 pb-2">
+                        <span class="material-symbols-outlined">insights</span> Soft Skills Sviluppate
+                    </h2>
+                    
+                    <ul class="space-y-4 text-sm text-sky-100">
+                        <li class="flex gap-3">
+                            <span class="material-symbols-outlined text-sky-400 shrink-0">record_voice_over</span>
+                            <div>
+                                <strong class="text-white block font-['Lexend']">Public Speaking</strong>
+                                Adattamento del registro linguistico e comunicativo in base all'età dell'interlocutore (bambini, ragazzi, adulti).
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="material-symbols-outlined text-sky-400 shrink-0">co-working</span>
+                            <div>
+                                <strong class="text-white block font-['Lexend']">Teamworking</strong>
+                                Coordinamento sinergico con i compagni di classe nella gestione dei flussi di visitatori e nella turnazione degli esperimenti.
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="material-symbols-outlined text-sky-400 shrink-0">psychology</span>
+                            <div>
+                                <strong class="text-white block font-['Lexend']">Problem Solving scientifico</strong>
+                                Capacità di risolvere imprevisti tecnici durante le dimostrazioni dal vivo e rispondere a domande complesse del pubblico.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-['Lexend'] font-bold text-sky-900 mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">history_edu</span> Diario Riflessivo &amp; Considerazioni Finali
+            </h2>
+            <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm text-on-surface-variant text-sm leading-relaxed space-y-4">
+                <p>
+                    L'esperienza come divulgatore per BergamoScienza ha rappresentato una pietra miliare del mio percorso PCTO. Spiegare la meteorologia e la fisica dell'atmosfera mi ha permesso non solo di consolidare le mie conoscenze teoriche, ma soprattutto di comprendere il valore sociale e civico della diffusione della cultura scientifica.
+                </p>
+                <p>
+                    Il forte involvement richiesto sia nei laboratori interni sia nell'affollata cornice di "Scuole in Piazza" ha potenziato notevolmente la mia sicurezza nell'esposizione e la mia flessibilità relazionale, fornendomi competenze trasversali d'eccellenza spendibili in qualunque contesto accademico e lavorativo futuro.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="w-full bg-surface-container-low border-t border-sky-200 mt-auto">
+        <div class="max-w-[1200px] mx-auto py-8 px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-secondary">
+            <div class="font-['Lexend'] font-semibold text-sky-800">© 2026 Portfolio PCTO — Filippo Dotti</div>
+            <div class="flex gap-6">
+                <a class="hover:text-primary transition-colors underline" href="#">LinkedIn</a>
+                <a class="hover:text-primary transition-colors underline" href="#">GitHub</a>
+                <a class="hover:text-primary transition-colors underline" href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="md:hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200 flex justify-around items-center h-16 z-50">
+        <a href="index.html" class="flex flex-col items-center gap-1 text-slate-600 hover:text-primary transition-colors">
+            <span class="material-symbols-outlined">home</span>
+            <span class="text-[10px] font-medium">Home Mappa</span>
+        </a>
+        <a href="bergamoscienza.html" class="flex flex-col items-center gap-1 text-primary transition-colors">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">cloudy_snowing</span>
+            <span class="text-[10px] font-semibold">Scienza</span>
+        </a>
+        <a href="sostenibilita.html" class="flex flex-col items-center gap-1 text-slate-600 hover:text-primary transition-colors">
+            <span class="material-symbols-outlined">eco</span>
+            <span class="text-[10px] font-medium">Sostenibilità</span>
+        </a>
+    </nav>
+
+</body>
+</html>

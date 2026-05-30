@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="it">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface": "#f5fbf7",
+                "primary": "#00685f", 
+                "outline-variant": "#bcc9c6",
+                "on-tertiary-fixed-variant": "#3d4947",
+                "secondary-fixed": "#dae2fd",
+                "on-primary-container": "#f4fffc",
+                "outline": "#6d7976",
+                "on-secondary": "#ffffff",
+                "on-primary-fixed-variant": "#00201c",
+                "surface-container-lowest": "#ffffff",
+                "on-background": "#191c1c",
+                "secondary-container": "#dae2fd",
+                "on-secondary-container": "#181c2b",
+                "on-surface-variant": "#3f4946",
+                "tertiary": "#4b6260",
+                "on-inverse-surface": "#eff1f0",
+                "on-surface": "#191c1c",
+                "surface-container-low": "#eef5f2",
+                "inverse-surface": "#2e3130",
+                "on-primary": "#ffffff",
+                "primary-fixed-dim": "#84d3c5",
+                "on-tertiary-container": "#07201e",
+                "primary-container": "#a1efe1",
+                "surface-bright": "#f6fbf9",
+                "surface-container-high": "#e2e8e7",
+                "inverse-primary": "#66b7aa",
+                "on-tertiary": "#ffffff",
+                "primary-fixed": "#9ff0e2",
+                "secondary": "#565e71",
+                "surface-container-highest": "#dce1e2",
+                "background": "#f6fbf9",
+                "tertiary-container": "#cee8e4",
+                "secondary-fixed-dim": "#be2a3c",
+                "error": "#ba1a1a",
+                "error-container": "#ffdad6",
+                "on-error": "#ffffff",
+                "on-error-container": "#410002"
+            }
+          }
+        }
+      }
+    </script>
+    <title>Progetto Sostenibilità - Infosostenibile</title>
+</head>
+<body class="bg-background text-on-surface antialiased font-['Inter'] min-h-screen flex flex-col">
+
+    <header class="border-b border-outline-variant bg-surface-container-lowest sticky top-0 z-50">
+        <div class="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 font-['Lexend'] font-bold text-lg text-primary hover:opacity-80 transition-opacity">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span>FILIPPO DOTTI</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="index.html" class="text-secondary hover:text-primary transition-colors">Home Mappa</a>
+                <a href="bergamoscienza.html" class="text-secondary hover:text-primary transition-colors">Bergamo Scienza</a>
+                <a href="sostenibilita.html" class="text-primary transition-colors font-semibold">Sostenibilità</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-[1000px] mx-auto w-full px-6 py-10">
+        
+        <section class="mb-8">
+            <div class="flex items-center gap-2 text-primary font-['Lexend'] font-semibold text-sm tracking-wider uppercase mb-2">
+                <span class="material-symbols-outlined text-sm">eco</span> Alzano Lombardo — Agenda 2030
+            </div>
+            <h1 class="text-3xl md:text-5xl font-['Lexend'] font-black tracking-tight text-primary mb-4">
+                Project Work: Infosostenibile
+            </h1>
+            <p class="text-secondary text-lg max-w-3xl">
+                Analisi statistica ed editoriale sulle abitudini ecologiche ed economiche degli studenti del liceo.
+            </p>
+        </section>
+
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant shadow-sm flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">person</span>
+                <div>
+                    <span class="block text-[11px] text-secondary uppercase tracking-wider">Studente</span>
+                    <span class="font-bold text-primary text-sm">F. Dotti (3E)</span>
+                </div>
+            </div>
+            <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant shadow-sm flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">school</span>
+                <div>
+                    <span class="block text-[11px] text-secondary uppercase tracking-wider">Istituto</span>
+                    <span class="font-bold text-primary text-sm">L.S. Amaldi</span>
+                </div>
+            </div>
+            <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant shadow-sm flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">calendar_month</span>
+                <div>
+                    <span class="block text-[11px] text-secondary uppercase tracking-wider">Anno Scolastico</span>
+                    <span class="font-bold text-primary text-sm">2023/2024</span>
+                </div>
+            </div>
+            <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant shadow-sm flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">assignment_turned_in</span>
+                <div>
+                    <span class="block text-[11px] text-secondary uppercase tracking-wider">Consegna</span>
+                    <span class="font-bold text-primary text-sm">07/06/2024</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <div class="relative rounded-2xl overflow-hidden shadow-lg border border-outline-variant bg-white p-2 group">
+                <img src="infosostenibile.jpg" alt="Articolo e Infografica Infosostenibile" class="w-full h-auto max-h-[600px] object-contain mx-auto group-hover:scale-[1.01] transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1000&q=80'"/>
+                <div class="mt-2 pt-2 border-t border-slate-100 flex justify-between items-center px-2">
+                    <span class="text-secondary text-xs font-semibold flex items-center gap-1.5">
+                        <span class="material-symbols-outlined text-sm text-primary">newspaper</span> Articolo ed Elaborato Grafico Finale
+                    </span>
+                    <span class="bg-primary/10 text-primary text-xs px-2.5 py-1 rounded-full font-medium">
+                        Project Work PCTO
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-10 bg-white rounded-2xl p-6 border border-outline-variant shadow-sm">
+            <h2 class="text-xl font-['Lexend'] font-bold text-primary mb-3 flex items-center gap-2">
+                <span class="material-symbols-outlined">work</span> Descrizione Attività
+            </h2>
+            <p class="text-sm text-secondary leading-relaxed mb-4">
+                Collaborazione diretta con la redazione della rivista trimestrale <strong>Infosostenibile</strong> (giornalista, esperto di infografiche e redattrice) per la produzione di un articolo e di un supporto grafico statistico basati sui dati d'istituto.
+            </p>
+            <div class="bg-surface-container-low p-3.5 rounded-xl border border-emerald-100 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">target</span>
+                <span class="text-sm text-secondary font-medium">
+                    <strong>Obiettivo:</strong> Tradurre i dati grezzi dei sondaggi in un articolo giornalistico e in un'infografica divulgativa.
+                </span>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-xl font-['Lexend'] font-bold text-primary mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined">reorder</span> Fasi del Percorso
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-surface-container-lowest p-4 rounded-xl border-l-4 border-primary shadow-sm">
+                    <span class="text-xs font-bold text-primary uppercase block mb-1">Fase 1</span>
+                    <h3 class="font-bold text-sm text-primary mb-1">Sondaggio Preliminare</h3>
+                    <p class="text-xs text-secondary leading-relaxed">Sviluppo del questionario digitale condiviso con gli studenti del liceo (coordinamento Prof. Sgrignoli).</p>
+                </div>
+
+                <div class="bg-surface-container-lowest p-4 rounded-xl border-l-4 border-primary shadow-sm">
+                    <span class="text-xs font-bold text-primary uppercase block mb-1">Fase 2</span>
+                    <h3 class="font-bold text-sm text-primary mb-1">Lezione Tecnica</h3>
+                    <p class="text-xs text-secondary leading-relaxed">Formazione con gli esperti sui criteri di scrittura giornalistica e regole di data visualization.</p>
+                </div>
+
+                <div class="bg-surface-container-lowest p-4 rounded-xl border-l-4 border-primary shadow-sm">
+                    <span class="text-xs font-bold text-primary uppercase block mb-1">Fase 3</span>
+                    <h3 class="font-bold text-sm text-primary mb-1">Analisi e Focus</h3>
+                    <p class="text-xs text-secondary leading-relaxed">Lavoro di gruppo sul trend specifico: frequenza ed impatto del lavaggio dei jeans.</p>
+                </div>
+
+                <div class="bg-surface-container-lowest p-4 rounded-xl border-l-4 border-primary shadow-sm">
+                    <span class="text-xs font-bold text-primary uppercase block mb-1">Fase 4</span>
+                    <h3 class="font-bold text-sm text-primary mb-1">Elaborazione Dati</h3>
+                    <p class="text-xs text-secondary leading-relaxed">Calcolo del risparmio idrico ed economico tramite tabelle pivot Excel e stesura dell'articolo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-10 bg-surface-container-low rounded-2xl p-5 border border-outline-variant">
+            <h2 class="text-xl font-['Lexend'] font-bold text-primary mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined">analytics</span> Competenze Sviluppate
+            </h2>
+            
+            <div class="overflow-x-auto rounded-xl border border-outline-variant bg-surface-container-lowest shadow-sm">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-primary text-on-primary font-['Lexend'] text-xs uppercase tracking-wider">
+                            <th class="p-3.5 font-semibold w-1/3">Competenza</th>
+                            <th class="p-3.5 font-semibold w-2/3">Applicazione Pratica</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-xs text-secondary divide-y divide-outline-variant">
+                        <tr class="hover:bg-surface-container-low/40 transition-colors">
+                            <td class="p-3.5 font-bold text-primary flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">edit_note</span> Scrittura Media
+                            </td>
+                            <td class="p-3.5 leading-relaxed">Tecniche di redazione giornalistica e abilità nel catturare l'interesse del lettore.</td>
+                        </tr>
+                        <tr class="hover:bg-surface-container-low/40 transition-colors">
+                            <td class="p-3.5 font-bold text-primary flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">insights</span> Data Synthesis
+                            </td>
+                            <td class="p-3.5 leading-relaxed">Selezione, sintesi ed estrapolazione delle evidenze statistiche più significative.</td>
+                        </tr>
+                        <tr class="hover:bg-surface-container-low/40 transition-colors">
+                            <td class="p-3.5 font-bold text-primary flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">legend_toggle</span> Infografiche
+                            </td>
+                            <td class="p-3.5 leading-relaxed">Progettazione grafica finalizzata a rendere i dati numerici immediati e accessibili.</td>
+                        </tr>
+                        <tr class="hover:bg-surface-container-low/40 transition-colors">
+                            <td class="p-3.5 font-bold text-primary flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">groups</span> Team Working
+                            </td>
+                            <td class="p-3.5 leading-relaxed">Collaborazione cooperativa all'interno del gruppo e divisione strategica dei ruoli.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-xl font-['Lexend'] font-bold text-primary mb-3 flex items-center gap-2">
+                <span class="material-symbols-outlined">history_edu</span> Valutazione dell'Esperienza
+            </h2>
+            <div class="bg-surface-container-lowest rounded-2xl p-5 border border-outline-variant text-sm text-secondary leading-relaxed space-y-3">
+                <p>
+                    L'attività ha stimolato una forte presa di coscienza sulle responsabilità ecologiche collettive, dimostrando che la sostenibilità si traduce in micro-scelte quotidiane e dati concreti.
+                </p>
+                <p>
+                    Il percorso ha arricchito il mio bagaglio di competenze trasversali, offrendo ottimi spunti critici e metodologici per i collegamenti interdisciplinari con l'<strong>Agenda 2030</strong> in sede di colloquio d'esame.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="w-full bg-surface-container-low border-t border-outline-variant mt-auto">
+        <div class="max-w-[1200px] mx-auto py-6 px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-secondary">
+            <div class="font-['Lexend'] font-semibold text-primary">© 2026 Portfolio PCTO — Filippo Dotti</div>
+            <div class="flex gap-6">
+                <a class="hover:text-primary transition-colors underline" href="#">LinkedIn</a>
+                <a class="hover:text-primary transition-colors underline" href="#">GitHub</a>
+                <a class="hover:text-primary transition-colors underline" href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
