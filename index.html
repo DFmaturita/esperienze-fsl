@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="it">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#474746",
+                        "surface": "#fdf8f8",
+                        "action-primary": "#6366F1",
+                        "inverse-on-surface": "#f4f0ef",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "surface-bright": "#fdf8f8",
+                        "outline": "#747878",
+                        "inverse-surface": "#313030",
+                        "primary-fixed": "#e5e2e1",
+                        "on-secondary-fixed": "#001d35",
+                        "on-surface-variant": "#434747",
+                        "on-primary-container": "#00201d",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#dae2fd",
+                        "on-tertiary-fixed-variant": "#324b4e",
+                        "on-inverse-surface": "#f4f0ef",
+                        "primary-fixed-dim": "#b3cbca",
+                        "tertiary-container": "#cce8ea",
+                        "on-tertiary-container": "#051f23",
+                        "primary-container": "#cfe8e6",
+                        "on-primary": "#ffffff",
+                        "primary": "#006a64",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "surface-variant": "#dae4e3",
+                        "tertiary": "#4a6366",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#00201d",
+                        "background": "#fdf8f8",
+                        "secondary": "#555f71",
+                        "on-secondary-container": "#131c2b",
+                        "on-background": "#1a1c1c",
+                        "outline-variant": "#bec8c7",
+                        "inverse-surface": "#313030",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f6f1f0",
+                        "surface-container": "#f1ebea",
+                        "surface-container-high": "#ebe6e5",
+                        "surface-container-highest": "#e5e0df"
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Portfolio PCTO - Maturità Filippo Dotti</title>
+</head>
+<body class="bg-background text-on-surface antialiased font-['Geist'] min-h-screen flex flex-col">
+
+    <header class="border-b border-surface-variant bg-surface-container-lowest sticky top-0 z-50">
+        <div class="max-w-[1280px] mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2 font-bold text-lg text-primary">
+                <span class="material-symbols-outlined">terminal</span>
+                <span>FILIPPO DOTTI</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="nottingham.html" class="text-secondary hover:text-primary transition-colors">Nottingham</a>
+                <a href="bergamoscienza.html" class="text-secondary hover:text-primary transition-colors">Bergamo Scienza</a>
+                <a href="sostenibilita.html" class="text-secondary hover:text-primary transition-colors">Sostenibilità</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-[1280px] mx-auto w-full px-6 py-10">
+        
+        <section class="text-center max-w-3xl mx-auto mb-10">
+            <h1 class="text-4xl md:text-5xl font-black tracking-tight text-primary mb-4">
+                FSL-Le tappe del mio percorso
+            </h1>
+            <p class="text-secondary text-lg">
+                Un percorso visivo attraverso i progetti, le competenze acquisite e le tappe del mio sviluppo personale e accademico.
+            </p>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-6">
+            
+            <section class="lg:col-span-7 bg-surface-container-low rounded-3xl p-6 shadow-sm border border-surface-variant h-full">
+                <h2 class="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                    <span class="material-symbols-outlined">map</span> Mappa delle Esperienze
+                </h2>
+                
+                <div class="relative w-full overflow-hidden rounded-2xl shadow-inner border border-surface-variant bg-slate-100" style="aspect-ratio: 16/9;">
+                    <img src="cartina.jpg" alt="Mappa delle tappe" class="w-full h-full object-cover opacity-80" onerror="this.src='https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80'"/>
+                </div>
+            </section>
+
+            <section class="lg:col-span-5 bg-surface-container rounded-3xl p-6 border border-surface-variant h-full">
+                <h2 class="text-xl font-bold text-primary mb-5 flex items-center gap-2">
+                    <span class="material-symbols-outlined">explore</span> Indice delle Esperienze
+                </h2>
+                
+                <div class="flex flex-col gap-4">
+                    
+                    <a href="nottingham.html" class="group bg-surface-container-lowest rounded-2xl p-4 border border-surface-variant flex flex-col justify-between hover:shadow-md transition-all hover:-translate-y-0.5">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-action-primary text-white rounded-full flex items-center justify-center shadow-sm flex-shrink-0">
+                                    <span class="material-symbols-outlined text-[20px]">search</span>
+                                </div>
+                                <div>
+                                    <span class="bg-primary text-white text-[10px] font-semibold px-2 py-0.5 rounded shadow-sm tracking-wide">UK</span>
+                                    <h3 class="font-bold text-base text-primary mt-0.5">Nottingham (UK)</h3>
+                                </div>
+                            </div>
+                            <span class="material-symbols-outlined text-action-primary opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all">arrow_forward</span>
+                        </div>
+                    </a>
+
+                    <a href="bergamoscienza.html" class="group bg-surface-container-lowest rounded-2xl p-4 border border-surface-variant flex flex-col justify-between hover:shadow-md transition-all hover:-translate-y-0.5">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center shadow-sm flex-shrink-0">
+                                    <span class="material-symbols-outlined text-[20px]">search</span>
+                                </div>
+                                <div>
+                                    <span class="bg-primary text-white text-[10px] font-semibold px-2 py-0.5 rounded shadow-sm tracking-wide">Italia</span>
+                                    <h3 class="font-bold text-base text-primary mt-0.5">Bergamo Scienze (Bergamo)</h3>
+                                </div>
+                            </div>
+                            <span class="material-symbols-outlined text-indigo-600 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all">arrow_forward</span>
+                        </div>
+                    </a>
+
+                    <a href="sostenibilita.html" class="group bg-surface-container-lowest rounded-2xl p-4 border border-surface-variant flex flex-col justify-between hover:shadow-md transition-all hover:-translate-y-0.5">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-sm flex-shrink-0">
+                                    <span class="material-symbols-outlined text-[20px]">search</span>
+                                </div>
+                                <div>
+                                    <span class="bg-primary text-white text-[10px] font-semibold px-2 py-0.5 rounded shadow-sm tracking-wide">Italia</span>
+                                    <h3 class="font-bold text-base text-primary mt-0.5">Sostenibilità (Alzano Lombardo)</h3>
+                                </div>
+                            </div>
+                            <span class="material-symbols-outlined text-emerald-600 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all">arrow_forward</span>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+            
+        </div>
+
+    </main>
+
+    <footer class="bg-surface-container dark:bg-inverse-surface full-width mt-auto border-t border-border-subtle">
+        <div class="max-w-[1280px] mx-auto py-6 px-safe-margin flex flex-col md:flex-row justify-between items-center gap-stack-md">
+            <div class="font-label-caps text-label-caps text-primary dark:text-on-primary text-sm">
+                © 2026 PREMIUM PORTFOLIO. MATURITÀ DI FILIPPO DOTTI.
+            </div>
+            <div class="flex gap-8 font-body-sm text-body-sm opacity-80 text-sm">
+                <a class="text-secondary dark:text-on-secondary-fixed-variant hover:text-action-primary underline transition-all" href="#">LinkedIn</a>
+                <a class="text-secondary dark:text-on-secondary-fixed-variant hover:text-action-primary underline transition-all" href="#">GitHub</a>
+                <a class="text-secondary dark:text-on-secondary-fixed-variant hover:text-action-primary underline transition-all" href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
